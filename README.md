@@ -1,4 +1,5 @@
 # amneziawg-docker
+[Original repo - amneziawg-go](https://github.com/amnezia-vpn/amneziawg-go)
 
 To create amneziawg interface:
 
