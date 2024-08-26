@@ -1,0 +1,13 @@
+services:
+  amnezia-server-wg:
+    restart: always
+    image: amnezia-wg:latest
+    network_mode: host
+    container_name: amnezia-wg
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    volumes:
+      - PATH_TO_CONF:/etc/wireguard
